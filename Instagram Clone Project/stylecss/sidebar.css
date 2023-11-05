@@ -1,0 +1,56 @@
+@media (max-width:766px) {
+    .sidebar{
+        display: none;
+    }
+}
+
+
+@media (min-width:766.1px)  {
+
+    body{
+        padding-top: 0px;
+    }
+
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 0px;   
+      padding: 10px;
+        background-color: white;
+       width: 50px;
+        z-index: 200;
+    }
+    
+    .insta-logo{
+        display: flex;
+    }
+    .sidebar-link{
+       margin:4px 0px;
+       padding: 12px;
+      
+    }
+    
+    .sidebar-link:hover{
+        background-color: rgb(235, 235, 235);
+        cursor: pointer;
+    }
+    
+    .sidebar-image{
+        height: 24px;
+        width: 24px;
+        object-fit: cover;
+    }
+    
+    .sidebar-link div{
+        font-family: roboto,arial;
+        font-size: 10px;
+        
+    }
+    
+    
+}
+
