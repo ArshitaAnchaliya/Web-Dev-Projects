@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone-Paper-Scissor</title>
+    <link rel="stylesheet" href="stonepaperscissorgame_style.css">
+</head>
+
+<body>
+    <p class="game-title">Stone Paper Scissor</p>
+
+    <button class="emojibtn"
+     onclick="usermove('Stone')">
+     <img src="images/stone-emoji.png"></button>
+
+    <button class="emojibtn" onclick="usermove('Paper')"> <img src="images/paper-emoji.png"></button></button>
+
+    <button class="emojibtn" onclick="usermove('Scissor')"> <img src="images/scissor-emoji.png"></button></button><br>
+
+    <div class="js-result result"></div>
+
+    <div class="js-playerpick style-playerpick"></div>
+
+    <p class="scoreboard"></p>
+
+    <button class="resetscorebtn" onclick="score.wins=0;
+    score.losses=0;
+    score.tie=0;
+    localStorage.removeItem('score');
+    document.querySelector('.scoreboard').innerHTML='Wins:'+ score.wins + ',' + 'Losses:' + score.losses + ',' + 'Ties:' + score.tie;
+
+    ">Reset Score</button>
+
+
+  <script src="stone-paper-scissor.js"></script>
+
+
+</body>
+
+</html>
